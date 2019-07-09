@@ -22,7 +22,22 @@ print(motorcycles)
 
 #removing items using pop()
 print("USING POP()")
-#popping from top of a stack (end of a list)
-popped_motorcycle = motorcycles.pop()
+#popping from top of a stack (end of a list) // or any position pop(1)
+popped_motorcycle = motorcycles.pop(0)
 print(motorcycles)
 print(popped_motorcycle)
+
+last_owned = popped_motorcycle;
+print("The last motorcycle I owned was " + last_owned.title() + ".")
+
+
+#removing when you know a value
+numbers = [ 1, 2 , 3, 4]
+print(numbers)
+numbers.remove(2)   #you can pass a value here through name
+print(numbers)
+
+worst_number = 4
+numbers.remove(worst_number)
+print(numbers)
+print("\nA " + str(worst_number) + " is too shitty for me")
