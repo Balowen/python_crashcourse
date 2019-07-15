@@ -41,3 +41,4 @@ worst_number = 4
 numbers.remove(worst_number)
 print(numbers)
 print("\nA " + str(worst_number) + " is too shitty for me")
+
