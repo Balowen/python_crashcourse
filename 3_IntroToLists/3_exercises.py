@@ -31,13 +31,13 @@ print("I can invite only 2 people for dinner")
 personToGo  = invitationList.pop() #z konca
 print("Sorry " + personToGo)
 print(invitationList)
-personToGo  = invitationList.pop() #z konca
+personToGo  = invitationList.pop()
 print("Sorry " + personToGo)
 print(invitationList)
-personToGo  = invitationList.pop() #z konca
+personToGo  = invitationList.pop()
 print("Sorry " + personToGo)
 print(invitationList)
-personToGo  = invitationList.pop() #z konca
+personToGo  = invitationList.pop()
 print("Sorry " + personToGo)
 print(invitationList)
 
@@ -45,5 +45,30 @@ for person in invitationList:
     print(person + " is still invited")
 del invitationList[:]
 print(invitationList)
-print("dupa")
 
+
+#3.8
+print("3-8 seeing the World")
+locations = ['Rome','Jastrzebia','London','Albania']
+print(locations)
+print("sorted: " + str(sorted(locations)))
+print("reverse sorted: " + str(sorted(locations,reverse=True)))
+print("original: " + str(locations))
+
+locations.reverse()
+print("after reverse(): ")
+print(locations)
+locations.reverse()
+print("after second reverse(): ")
+print(locations)
+
+locations.sort()
+print("after sort(): ")
+print(locations)
+
+locations.sort(reverse=True)
+print("after reverse sort(): ")
+print(locations)
+
+#3.9 dinner guests
+print("Length of locations list: " + str(len(locations)))
