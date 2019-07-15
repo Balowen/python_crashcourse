@@ -18,3 +18,7 @@ for animal in animals:
     print(animal.title() + " would make a great pet")
 print("I would love to get any of those\n")
 
+#FORRRRRRRRRRR
+for value in range(1, 5):
+    print(value)
+
