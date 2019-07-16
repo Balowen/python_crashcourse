@@ -22,3 +22,24 @@ print("I would love to get any of those\n")
 for value in range(1, 5):
     print(value)
 
+#using range to make a list of numbers
+numbers = list(range(1, 6))
+print(numbers)
+
+#EVEN NUMBERS between 1 and 10
+even_numbers = list(range(2,11,2))
+print(even_numbers)
+
+#squares
+squares = []
+for value in range(1,11):
+    squares.append(value**2)
+    # square = value**2
+    # squares.append(square)
+
+print("squares: " + str(squares))
+
+#list comprehension
+
+squares = [value**2 for value in range(1,11)]
+print(squares)
