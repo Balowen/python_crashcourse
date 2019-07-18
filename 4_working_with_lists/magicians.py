@@ -3,20 +3,6 @@ for magician in magicians:
     print(magician.title() + ", that was an awesome trick.")
     print("Can't wait for you next trick, " + magician.title() + ".\n")
 
-#EXERCISES
-print("exercises\n")
-#4.1
-pizzas = ['arabska', 'pepperoni', 'mrozona']
-for pizza in pizzas:
-    print("I like " + pizza + " pizza")
-
-print('DAAAAAMN I love pizza\n')
-
-#4.2
-animals = ['cat', 'dog', 'elephant']
-for animal in animals:
-    print(animal.title() + " would make a great pet")
-print("I would love to get any of those\n")
 
 #FORRRRRRRRRRR
 for value in range(1, 5):
@@ -43,3 +29,28 @@ print("squares: " + str(squares))
 
 squares = [value**2 for value in range(1,11)]
 print(squares)
+
+#Working with a part of lists
+players = ['charles','ronaldo','martina','ebi','eliot']
+print(players[0:3])
+print(players[-3:])
+
+print("\n First three players: ")
+for player in players[:3]:
+    print(player.title())
+
+
+#copying list
+my_foods = ['pizza','szpageti','carbonara']
+friend_foods = my_foods[:]
+#friend_food = my_foods         that wouldn't work, it would create smth like a pointer
+
+my_foods.append("lasagne")
+friend_foods.append("chips")
+
+print("My fav foods are:")
+print(my_foods)
+
+print("\nMy friend's fav foods are:")
+for item in friend_foods:
+    print(item)
