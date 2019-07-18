@@ -5,4 +5,6 @@ if requested_toppings != 'anchovies':
     print("Hold the anchovies!")
 
 if 'cheese' in requested_toppings:
-    print("Damn, that cheese is good")
+    print("Adding cheese")
+if 'onions' in requested_toppings:
+    print("Adding extra onions")
