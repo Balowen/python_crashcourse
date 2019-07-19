@@ -27,4 +27,8 @@ for name in sorted(favorite_languages.keys()):
 if 'erin' not in favorite_languages.keys():
     print("Erin, please take our poll.")
 
+print("\nThe following languages have been mentioned:")
+#set() makes a set of unique languages
+for language in set(favorite_languages.values()):
+    print(language.title())
 

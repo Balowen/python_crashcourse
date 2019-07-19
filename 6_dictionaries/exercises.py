@@ -24,7 +24,48 @@ glossary = {
     'for': 'used to initiate a for loop',
     'print': 'used to display text',
     'list': 'cool way to store a lot of values of any kind',
+    'set()': 'makes a set of unique items from dictionary'
 }
 
 for word, meaning in glossary.items():
     print(word + "\n\t" + meaning)
+
+#6-5 rivers
+print("\n")
+
+rivers = {
+    'nile': 'egypt',
+    'wieprz': 'poland',
+    'wisla': 'poland',
+}
+
+for river, country in rivers.items():
+    print("The " + river.title() +
+          " runs through " + country.title() + ".")
+
+print("\nMentioned rivers:")
+for river in set(rivers.keys()):
+    print(river.title())
+
+print("\nMentioned countries:")
+for country in set(rivers.values()):
+    print(country.title())
+
+#6-6 Pooling
+print("\n")
+
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c++',
+    'eddie': 'ruby',
+    'phil': 'python',
+}
+
+people_to_ask = ['phil', 'sarah',
+                 'ricky', 'morty']
+
+for name in people_to_ask:
+    if name in favorite_languages.keys():
+        print("Thanks for responding " + name.title())
+    else:
+        print(name.title() + ", please take the poll.")
