@@ -1,8 +1,8 @@
 favorite_languages = {
-    'jen': 'python',
-    'sarah': 'c++',
-    'eddie': 'ruby',
-    'phil': 'python',
+    'jen': ['python', 'go'],
+    'sarah': ['c++'],
+    'eddie': ['ruby', 'haskell'],
+    'phil': ['python'],
 }
 
 friends = ['phil', 'sarah']
