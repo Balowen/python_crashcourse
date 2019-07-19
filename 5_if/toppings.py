@@ -2,7 +2,7 @@ available_toppings = ('mushrooms', 'ketchup', 'pineapple',
                       'onions', 'cheese', 'olives')
 
 requested_toppings = ['mushrooms', 'ketchup',
-                      'onions', 'cheese']
+                      'onions', 'cheese', 'french fries']
 # requested_toppings = []
 
 # if requested_toppings != 'anchovies':
@@ -20,3 +20,4 @@ if requested_toppings:
             print("Sorry, we don't have " + requested_topping + '.')
 else:
     print("Are you sure you want a plain pizza?")
+
