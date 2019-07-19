@@ -5,8 +5,6 @@ favorite_languages = {
     'phil': ['python'],
 }
 
-friends = ['phil', 'sarah']
-
 for name, languages in favorite_languages.items():
     if len(languages) == 1:
         print(name.title() + "'s favorite language is ")
