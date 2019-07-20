@@ -69,3 +69,64 @@ for name in people_to_ask:
         print("Thanks for responding " + name.title())
     else:
         print(name.title() + ", please take the poll.")
+
+#6-8 people
+friend_0 = {
+    'first_name': 'kamil',
+    'last_name': 'król',
+    'age': 21,
+    'city': 'wrocław',
+    }
+friend_1 = {
+    'first_name': 'jon',
+    'last_name': 'snow',
+    'age': 21,
+    'city': 'winterfell',
+    }
+friend_2 = {
+    'first_name': 'kali',
+    'last_name': 'linux',
+    'age': 26,
+    'city': 'computerville',
+    }
+
+friends = [friend_0, friend_1, friend_2]
+
+for friend in friends:
+    full_name = friend['first_name'] + " " + friend['last_name']
+    age = str(friend['age'])
+
+    print("\n" + full_name.title() + "\n\tage: " + age +
+          "\n\tcity: " + friend['city'].title())
+
+#6-8 pets
+reksio = {
+    'animal': 'dog',
+    'owner': 'bartek'
+}
+pikus = {
+    'animal': 'dog',
+    'owner': 'julia'
+}
+harambe = {
+    'animal': 'gorilla',
+    'owner': 'zooman'
+}
+
+pets = [reksio, pikus, harambe]
+
+for pet in pets:
+    print(pet)
+
+#6-9 favorite_places
+favorite_places = {
+    'bartek': ['rome', 'krasnobród', 'leba'],
+    'aneta': ['rome', 'warsaw'],
+    'julia': ['leba', 'zamosc'],
+}
+
+for name, places in favorite_places.items():
+    print(name.title() + "'s favorite places:")
+    for place in places:
+        print("\t" + place.title())
+
