@@ -130,3 +130,42 @@ for name, places in favorite_places.items():
     for place in places:
         print("\t" + place.title())
 
+#6_10 fav numbers
+favorite_numbers = {
+    'sarah': [5, 4],
+    'kamil': [12],
+    'justin': [54, 23],
+    'ellie': [25, 7, 19],
+}
+
+for person, numbers in favorite_numbers.items():
+    print(person.title() + "'s favorite numbers:")
+    for number in numbers:
+        print("\t" + str(number))
+
+#6-11 Cities
+print("\n")
+cities = {
+    'rome': {
+        'country': 'italy',
+        'population': 287000000,
+        'fact': "it's beautiful",
+    },
+    'warsaw': {
+        'country': 'poland',
+        'population': 1760000,
+        'fact': "good pierogies there",
+    },
+    'krasnobród': {
+        'country': 'poland',
+        'population': 4000,
+        'fact': "it's my hometown",
+    }
+}
+
+for city, info in cities.items():
+    print(city.title())
+    print('\t' + "country: " + info['country'].title() +
+          "\n\tpopulation: " + str(info['population']) +
+          "\n\t" + info['fact'])
+
