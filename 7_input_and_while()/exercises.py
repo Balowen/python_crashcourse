@@ -15,10 +15,43 @@
 
 #7_3 multiples of ten
 
-number = input("Give me a number: ")
-number = int(number)
+# number = input("Give me a number: ")
+# number = int(number)
+#
+# if number % 10 == 0:
+#     print("The number " + str(number) + " is a multiple of 10.")
+# else:
+#     print("The number " + str(number) + " is not a multiple of 10.")
 
-if number % 10 == 0:
-    print("The number " + str(number) + " is a multiple of 10.")
-else:
-    print("The number " + str(number) + " is not a multiple of 10.")
+#7_4 pizza toppings
+# prompt = "Enter a pizza topping: "
+# prompt += "\n(Type 'quit' to close the program.) "
+#
+# while True:
+#     topping = input(prompt)
+#
+#     if topping == 'quit':
+#         break
+#     else:
+#         print("I'll add " + topping + " to your pizza.")
+
+#7-5 movie tickets
+prompt = "Enter your age: "
+prompt += "\n(Type 'quit' to close the program.) "
+
+active = True
+while active:
+    age = input(prompt)
+
+    if age == 'quit':
+        active = False
+        break
+
+    age = int(age)
+
+    if age <= 3:
+        print("Your ticket is free.")
+    elif age <= 12:
+        print("Your ticket costs $10.")
+    else:
+        print("Your ticket costs $15.")

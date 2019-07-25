@@ -1,5 +1,10 @@
-prompt = "If you tell us who you are, we can personalize the messages you see."
-prompt += "\nWhat is your first name? "
+prompt = "Enter the city you have visited: "
+prompt += "\n(Enter 'quit' whe you are finished.) "
 
-name = input(prompt)
-print("Hello, " + name.title() + "!")
+while True:
+    city = input(prompt)
+
+    if city == 'quit':
+        break
+    else:
+        print('City: ' + city.title())
