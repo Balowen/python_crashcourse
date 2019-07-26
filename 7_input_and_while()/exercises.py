@@ -36,22 +36,40 @@
 #         print("I'll add " + topping + " to your pizza.")
 
 #7-5 movie tickets
-prompt = "Enter your age: "
-prompt += "\n(Type 'quit' to close the program.) "
+# prompt = "Enter your age: "
+# prompt += "\n(Type 'quit' to close the program.) "
+#
+# active = True
+# while active:
+#     age = input(prompt)
+#
+#     if age == 'quit':
+#         active = False
+#         break
+#
+#     age = int(age)
+#
+#     if age <= 3:
+#         print("Your ticket is free.")
+#     elif age <= 12:
+#         print("Your ticket costs $10.")
+#     else:
+#         print("Your ticket costs $15.")
+#
+#7-8 Deli
+sandwich_orders = ['kurczakowa', 'pastrami', 'z szynkom', 'pastrami', 'gyros', 'vege', 'pastrami']
+finished_sandwiches = []
 
-active = True
-while active:
-    age = input(prompt)
+print("We currently don't have any pastrami left.")
+while 'pastrami' in sandwich_orders:
+    sandwich_orders.remove('pastrami')
 
-    if age == 'quit':
-        active = False
-        break
+while sandwich_orders:
+    current_sandwich = sandwich_orders.pop()
 
-    age = int(age)
+    print("I made your " + current_sandwich)
+    finished_sandwiches.append(current_sandwich)
 
-    if age <= 3:
-        print("Your ticket is free.")
-    elif age <= 12:
-        print("Your ticket costs $10.")
-    else:
-        print("Your ticket costs $15.")
+print("\nList of made sandwiches:")
+for sandwich in finished_sandwiches:
+    print(sandwich)
