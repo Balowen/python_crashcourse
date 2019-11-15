@@ -6,6 +6,7 @@ class Car():
         self.make = make
         self.model = model
         self.year = year
+        self.odometer_reading = 0 #drogomierz
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name"""
@@ -13,6 +14,41 @@ class Car():
                     self.make + ' ' + self.model
         return long_name.title()
 
+    def read_odometer(self):
+        """Print a statement showing the car's mileage."""
+        print("This car has " + str(self.odometer_reading) + " miles on it.")
+
+    def update_odometer(self, mileage):
+        """Set the odometer reading to the given value.
+        Reject the change if it attempts to roll the odometer back."""
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles):
+        """Add the given amount to the odometer reading"""
+        if miles > 0:
+            self.odometer_reading += miles
+        else:
+            print("You can't roll back the odometer.")
 
 my_new_car = Car('audi', 'a6', 2003)
 print(my_new_car.get_descriptive_name())
+my_new_car.read_odometer()
+
+# modifying an attribute's value directly
+# my_new_car.odometer_reading = 20
+my_new_car.update_odometer(23)
+my_new_car.read_odometer()
+
+my_new_car.update_odometer(17)
+
+my_used_car = Car('subaru', 'outback', '1998')
+print(my_used_car.get_descriptive_name())
+
+my_used_car.update_odometer(230000)
+my_used_car.read_odometer()
+
+my_used_car.increment_odometer(4100)
+my_used_car.read_odometer()
